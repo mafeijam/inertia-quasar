@@ -1,0 +1,63 @@
+@import "quasar/dist/quasar.min.css";
+@import "nprogress";
+
+* {
+    font-family: 'Noto Sans TC';
+}
+
+.ghost {
+    opacity: .5;
+    cursor: all-scroll;
+}
+
+.handle {
+    cursor: all-scroll;
+    user-select: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.top {
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrap-fill {
+    height: calc(100% - 35px);
+    position: relative;
+}
+
+.sticky {
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+}
+
+.scrollable {
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #CFD8DC;
+}
+
+::-webkit-scrollbar-track {
+    background: #ECEFF1;
+}
