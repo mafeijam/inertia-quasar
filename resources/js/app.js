@@ -1,10 +1,16 @@
-import { InertiaApp } from '@inertiajs/inertia-vue'
-
 import Vue from 'vue'
-// import 'quasar/dist/quasar.min.css'
-import 'quasar/dist/quasar.umd.min.js'
+import { InertiaApp } from '@inertiajs/inertia-vue'
+import Quasar from 'quasar'
 
 Vue.use(InertiaApp)
+
+Vue.use(Quasar, {
+  config: {
+    loadingBar: {
+      skipHijack: true
+    }
+  }
+})
 
 const app = document.getElementById('app')
 let page = JSON.parse(app.dataset.page)

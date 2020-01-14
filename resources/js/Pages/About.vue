@@ -1,7 +1,6 @@
 <template lang="pug">
-  q-page(padding)
-    q-card
-      q-card-section it works about!!!!!
+  q-card.shadow-1
+    q-card-section it works about!!!!!
 </template>
 
 <script>

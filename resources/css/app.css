@@ -1,8 +1,17 @@
 @import "quasar/dist/quasar.min.css";
-@import "nprogress";
 
 * {
     font-family: 'Noto Sans TC';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1976D2;
 }
 
 .ghost {
@@ -46,6 +55,14 @@
 
 .scrollable {
     overflow-y: auto;
+}
+
+.fa-btn-sm {
+    font-size: 1.15em !important;
+}
+
+.fa-input-sm {
+    font-size: 0.8em !important;
 }
 
 ::-webkit-scrollbar {
