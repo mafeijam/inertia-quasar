@@ -31,6 +31,12 @@ export default {
         this.$page.errors[k] = false
       }
       this.$inertia.post('/translate', this.form)
+        .then(_ => {
+          this.form = {
+            en: '',
+            zh: ''
+          }
+        })
     }
   }
 }

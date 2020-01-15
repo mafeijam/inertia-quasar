@@ -65,6 +65,17 @@ a:hover {
     font-size: 0.8em !important;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+.q-stepper__header--alternative-labels .q-stepper__tab {
+    min-height: auto;
+    padding: 24px 0px;
+}
+.q-stepper--horizontal .q-stepper__step-inner {
+    padding: 16px;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;

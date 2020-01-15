@@ -39,6 +39,11 @@ Route::post('/translate', function (Request $request) {
     return back()->with('flash', 'success');
 });
 
+Route::get('/client', function () {
+    return Inertia::render('Client');
+});
+
+
 Route::get('/g', function () {
     ini_set('memory_limit', '-1');
     set_time_limit(0);
