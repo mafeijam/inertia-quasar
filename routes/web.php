@@ -43,6 +43,16 @@ Route::get('/client', function () {
     return Inertia::render('Client');
 });
 
+Route::get('/pdf', function () {
+    $pdf = app('dompdf.wrapper');
+
+    $image = Storage::get('victorysec_logo.png');
+
+    $image = 'data:image/png;base64,' . base64_encode($image);
+
+    return  $pdf->loadView('pdf.client', compact('image'))->stream('file.pdf');
+});
+
 
 Route::get('/g', function () {
     ini_set('memory_limit', '-1');

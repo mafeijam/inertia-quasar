@@ -68,10 +68,12 @@ a:hover {
 .no-scroll {
     overflow: hidden;
 }
+
 .q-stepper__header--alternative-labels .q-stepper__tab {
     min-height: auto;
     padding: 24px 0px;
 }
+
 .q-stepper--horizontal .q-stepper__step-inner {
     padding: 16px;
 }
