@@ -17,8 +17,8 @@ Route::get('/login', function () {
 
 
 Route::get('/about', function () {
-    session()->push('flash', 'hi');
-    return Inertia::render('About');
+    // session()->put('flash', 'hi');
+    return Inertia::render('About')->with('flash', 'hihi');
 });
 
 Route::get('/translate', function () {
