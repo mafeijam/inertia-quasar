@@ -26,7 +26,7 @@
         "@inertiajs/inertia-vue": "^0.1.4",
         "@quasar/extras": "^1.8.2",
         "postcss-import": "^12.0.1",
-        "pug": "^2.0.4",
+        "pug": "^3.0.1",
         "pug-plain-loader": "^1.0.0",
         "quasar": "^1.12.8",
         "vue": "^2.6.11",
